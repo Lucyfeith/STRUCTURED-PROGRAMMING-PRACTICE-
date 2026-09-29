@@ -3,16 +3,30 @@
 
 int main()
 {
-    int num1,num2;
-     printf("enter two numbers\n");
-    scanf("%d %d",&num1,&num2);
+   float highest,current;
+     printf("enter highest rainfall: \n");
+     scanf("%f",&highest);
+      printf("enter current year rainfall: \n");
+      scanf("%f",&current);
+
+   if (current>highest){
+    printf("current rainfall %.2f exceeds highest%.2f\n",current,highest);
+    highest=current;
+    printf("highest updated to %.2f\n",highest);
+
+
+   }
+
+    printf("\n");
 
 
 
-    printf("sum is %d\n",num1+num2);
-     printf("product is %d\n", num1*num2);
-     printf("difference is %d\n",num1-num2);
-     printf("quotient is %d\n",num1/num2);
+
+
+
+
+
+
 
 
 
